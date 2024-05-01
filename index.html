@@ -64,10 +64,12 @@
             let password = document.getElementById('password').value;
 
             // Check if the password is correct
-            if (username !== 'user') {
-                alert('Incorrect password!');
+            if (username !== 'user', username !== 'lightningspeed') {
+                alert('Incorrect password!');                             
                 return;
             }
+
+
             if (password !== 'password') {
                 alert('Incorrect password!');
                 return;
