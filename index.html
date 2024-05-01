@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login Form</h2>
+        <form id="loginForm">
+            <input type="text" placeholder="Username" id="username" required>
+            <input type="password" placeholder="Password" id="password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+
+            // Check if the password is correct
+            if (username !== 'user') {
+                alert('Incorrect password!');
+                return;
+            }
+            if (password !== 'password') {
+                alert('Incorrect password!');
+                return;
+            }
+
+            // Redirect to the dashboard page
+            window.location.href = 'dashboard.html';
+        });
+    </script>
+</body>
+</html>
