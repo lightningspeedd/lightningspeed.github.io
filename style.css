@@ -1,0 +1,86 @@
+html {
+  height: 1000%;
+  width: 1000%;
+  color: #ffffff; /* White color for text */
+  font-size: 323%;
+  background-color: #000000;
+  position: relative;
+  
+  /* Black color for background */
+}
+button {
+  background-color: #0000ff; /* Green background */
+  color: white; /* White text color */
+  padding: 15px 20px; /* Padding */
+  border: none; /* No border */
+  cursor: pointer; /* Cursor style */
+  position: value;
+  font-size: 323%;
+  border-radius: 5px; /* Rounded corners */
+}
+
+button:hover {
+  background-color: #000000;/* Darker green background on hover */
+  
+}
+body {                      
+  font-family: Arial, sans-serif;
+}
+
+#chat-window {
+  width: 400px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#chat-messages {
+  height: 200px;
+  overflow-y: auto;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+#message-input {
+  width: 300px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add styles for the chat window */
+#chat-window {
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+#chat-messages {
+    height: 200px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#message-input {
+    width: 200px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
